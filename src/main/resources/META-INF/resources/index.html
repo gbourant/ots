@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p>Όλος ο κώδικας μπορεί να βρεθεί στο <a href="https://github.com/gbourant/ots" target="_blank">https://github.com/gbourant/ots</a></p>
+
+<p>Η εφαρμογή έχει γίνει deploy σε AlmaLinux 10 σε VPS της <a href="https://www.hetzner.com/" target="_blank">Hetzner</a></p>
+
+<p>Το DNS έχει ρυθμιστεί με το <a href="https://cloudflare.com/" target="_blank">Cloudflare</a> το οποίο λειτουργεί σαν reverse proxy</p>
+
+<p>Στο VPS υπάρχει ο <a href="https://caddyserver.com/" target="_blank">CaddyServer</a> όπου έχει εκδώσει δικό του certificate και λειτουργεί και αυτός σαν reverse proxy</p>
+
+<p>Το <a href="https://systemd.io/" target="_blank">systemd</a> έχει χρησιμοποιηθεί ώστε να ξεκινά την εφαρμογή μετά από boot και το network ή failure</p>
+
+<p>Έχουν γίνει και τα 3 ζητούμενα:</p>
+
+<ol>
+
+    <li>Το πρώτο ζητούμενο είναι διαθέσιμο <a href="https://github.com/gbourant/ots/blob/master/src/main/resources/META-INF/resources/uml.png" target="_blank">εδώ</a>
+        <ul><img src="uml.png" width="500px"></ul>
+    </li>
+    <li>Το δεύτερο ζητούμενο είναι διαθέσιμο εδώ <a href="https://github.com/gbourant/ots/blob/master/src/main/resources/db/migration/V1.1__Init.sql" target="_blank">V1.1__Init.sql
+    </a></li>
+    <li>Ο κώδικας απ το τρίτο ζητούμενο είναι διαθέσιμος <a href="https://github.com/gbourant/ots" target="_blank">εδώ</a> όπως και είναι live σε <a href="/warehouse" target="_blank">REST Endpoint</a> ώστε να το δοκιμάσετε. Επίσης, υπάρχει διαθέσιμο <a href="/q/swagger-ui/" target="_blank">Swagger UI</a>. Υπάρχει ήδη category με το ID 42 ώστε να μπορούν να γίνουν create νέα φάρμακα.</li>
+</ol>
+
+<p>Έχει χρησιμοποιηθεί η <a href="https://www.h2database.com/html/main.html" target="_blank">H2
+    database</a>, το <a href="https://flywaydb.org/" target="_blank">Flyway</a> για το database migrations και ο κώδικας
+    είναι πλήρες τεσταρισμένος</p>
+
+</body>
+</html>
